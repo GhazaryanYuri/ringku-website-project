@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ringku</title>
+    <link rel="stylesheet" href="Styles/finance-chart.css" />
+    <link rel="icon" href="Icons/Ringku-Logo.svg" />
+  </head>
+  <body>
+    <aside>
+      <nav>
+        <header>
+          <div class="logo">
+            <img src="Icons/Ringku-Logo.svg" alt="Ringku Logo" />
+          </div>
+          <button class="btn">
+            <img src="Icons/burger-menu.svg" alt="" />
+          </button>
+        </header>
+        <ul>
+          <li>
+            <img src="Icons/message.svg" alt="message" /><a href="index.html"
+              >My Wallet</a
+            >
+          </li>
+          <li>
+            <img src="Icons/message.svg" alt="message" /><a href="my-card.html"
+              >My Card</a
+            >
+          </li>
+          <li class="active">
+            <img src="Icons/message.svg" alt="message" /><a href="#"
+              >Finance Chart</a
+            >
+          </li>
+          <li>
+            <img src="Icons/message.svg" alt="message" /><a
+              href="recent-transactions.html"
+              >Recent <br />
+              Transactions</a
+            >
+            <div class="notification"><p>12</p></div>
+          </li>
+        </ul>
+      </nav>
+      <footer>
+        <div class="settings">
+          <img src="Icons/settings.svg" alt="settings" />
+          <a href="#">Settings</a>
+        </div>
+        <div class="account">
+          <img src="Images/adrian-tra.jpg" alt="Adrian Tra" />
+          <a href="#">Adrian Tra</a>
+        </div>
+      </footer>
+    </aside>
+    <main>
+      <header>
+        <div class="start">
+          <a href="#"><img src="Icons/inbox.svg" alt="inbox" /></a>
+          <a href="#"
+            ><img src="Icons/arrows-expand.svg" alt="arrows-expand"
+          /></a>
+        </div>
+        <div class="end">
+          <a href="#"
+            ><img
+              src="Icons/question-mark-circle.svg"
+              alt="question-mark-circle"
+          /></a>
+        </div>
+      </header>
+      <div class="container">
+        <div class="title">
+          <h1>Finance Chart</h1>
+          <p>Keep track of your financial plan</p>
+        </div>
+        <div class="content">
+          <div class="finance-top">
+            <p>
+              <span><img src="Icons/information.svg" alt="information" /></span>
+              Please remember to fill that data that required for your debit
+              card
+            </p>
+            <button type="button" class="infoBarBtn">Got it</button>
+          </div>
+          <div class="finance-mid">
+            <div class="mid-title">
+              <h1>Statistic</h1>
+              <div class="dropdowns">
+                <select>
+                  <option class="option">Income Chart</option>
+                </select>
+                <select>
+                  <option class="option">This Year</option>
+                </select>
+              </div>
+            </div>
+            <canvas class="incomeChart" height="430px"></canvas>
+          </div>
+          <div class="finance-bottom"></div>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="module" src="Scripts/finance-chart.js"></script>
+  </body>
+</html>
