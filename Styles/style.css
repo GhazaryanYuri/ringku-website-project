@@ -55,8 +55,8 @@ body {
   display: flex;
 
   aside {
-    max-width: 300px;
-    min-height: 984px;
+    width: 300px;
+    max-height: 984px;
     background-color: var(--black);
     padding: 0 18px 32px 18px;
     display: flex;
@@ -84,7 +84,7 @@ body {
           }
         }
 
-        .btn {
+        .navbar-btn {
           width: 40px;
           height: 40px;
           border-radius: 100%;
@@ -494,6 +494,96 @@ body {
 
           &:hover {
             background-color: var(--neutural-30);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1470px) {
+  body {
+    flex-direction: column;
+    min-width: 100%;
+
+    aside {
+      min-width: 100%;
+      min-height: 52px;
+      padding: 14.5px 12px;
+      gap: 32px;
+      position: sticky;
+      top: 0;
+      z-index: 9999999;
+
+      nav {
+        width: 100%;
+
+        header {
+          padding: 4px 12px;
+        }
+
+        .links-inactive {
+          display: none;
+        }
+
+        .links-active {
+          width: 100%;
+          justify-content: flex-end;
+          margin-top: 24px;
+          padding: 8px 16px;
+        }
+      }
+
+      .navbar-footer-disabled {
+        display: none;
+      }
+
+      .navbar-footer-enable {
+        display: block;
+        padding: 8px 16px;
+      }
+    }
+
+    main {
+      height: auto;
+
+      header {
+        display: none;
+      }
+
+      .container {
+        padding: 18px 16px;
+
+        .content {
+          .wallet-top {
+            .user-info {
+              width: 100%;
+            }
+
+            .payment {
+              width: 100%;
+              gap: 10px;
+
+              .send,
+              .request {
+                flex: 1;
+                box-shadow: 0px 10px 5px var(--neutural-60);
+                border-radius: 6px;
+                border-width: 2px;
+              }
+            }
+          }
+
+          .wallet-mid {
+            justify-content: center;
+
+            .item {
+              flex: 1;
+            }
+          }
+
+          .wallet-bottom {
+            min-width: 100%;
           }
         }
       }
