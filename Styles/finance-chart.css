@@ -558,6 +558,8 @@ body {
           flex-wrap: wrap;
 
           .item {
+            height: auto;
+
             img {
               min-width: 24px;
               min-height: 24px;
